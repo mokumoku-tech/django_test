@@ -65,8 +65,10 @@ PORTは`docker-compose.yml`で設定してあるもの（今回は8000）でア�
 
 ### アプリケーション作成
 下記コマンドで`manage.py`と同階層に`polls`ディレクトリと関連ファイルが生成
-`cd {PROJECT_NAME}`
-`docker exec -it {CONTAINER ID | CONTAINER_NAME} python manage.py startapp polls`
+
+プロジェクトディレクトリに移動（manage.pyと同階層）`cd {PROJECT_NAME}`
+
+アプリ作成`docker exec -it {CONTAINER ID | CONTAINER_NAME} python manage.py startapp polls`
 
 ### 参照サイト
 https://hodalog.com/run-django-app-using-docker-compose/
