@@ -54,7 +54,7 @@ PORTは`docker-compose.yml`で設定してあるもの（今回は8000）でア�
 `docker start {CONTAINER_ID | CONTAINER_NAME}`
 
 ### アプリケーション作成
-上記コマンドで`manage.py`と同階層に`polls`ディレクトリと関連ファイルが生成
+下記コマンドで`manage.py`と同階層に`polls`ディレクトリと関連ファイルが生成
 `docker exec -it {CONTAINER ID | CONTAINER_NAME} python {PROJECT_NAME}/manage.py startapp polls`
 
 ### 参照サイト
