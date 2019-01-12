@@ -53,6 +53,16 @@ PORTは`docker-compose.yml`で設定してあるもの（今回は8000）でア�
 ### コンテナ起動
 `docker start {CONTAINER_ID | CONTAINER_NAME}`
 
+### 2つのコンテナを一括起動・停止・操作
+起動
+`docker-compose start`
+
+停止
+`docker-compose stop`
+
+再起動
+`docker-compose restart`
+
 ### アプリケーション作成
 下記コマンドで`manage.py`と同階層に`polls`ディレクトリと関連ファイルが生成
 `docker exec -it {CONTAINER ID | CONTAINER_NAME} python {PROJECT_NAME}/manage.py startapp polls`
