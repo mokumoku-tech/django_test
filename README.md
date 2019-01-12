@@ -8,7 +8,7 @@
 `docker container ls`
 コンテナの確認
 
-`docker container exec -it {CONTAINER_ID} django-admin startproject {PROJECT_NAME}`
+`docker container exec -it {CONTAINER_ID | CONTAINER NAME} django-admin startproject {PROJECT_NAME}`
 PROJECT_NAMEには半角英数字でプロジェクト名を設定
 
 作成されたプロジェクトディレクトリ内 
@@ -39,7 +39,7 @@ ALLOWED_HOSTS = ['*']
 ```
 
 ### Djangoプロジェクト起動
-`docker container exec -it {CONTAINER_ID} python {PROJECT_NAME}/manage.py runserver 0.0.0.0:8000`
+`docker container exec -it {CONTAINER_ID | CONTAINER NAME} python {PROJECT_NAME}/manage.py runserver 0.0.0.0:8000`
 
 
 ### アクセス
